@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navaneeth's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/swap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media_query.css">
+    
+</head>
+
+<body>
+    <!-- ====================================== Preloader ===================================== -->
+    <div class="wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">Navaneeth</text>
+                </svg>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- ====================================== Preloader End ===================================== -->
+    <!-- ====================================== Background Animation ===================================== -->
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- ====================================== Background Animation End ===================================== -->
+    <!-- ====================================== Cursor ===================================== -->
+    <div class="cursor"></div>
+    <!-- ====================================== Cursor End ===================================== -->
+    <!-- ====================================== Dark Light Mode ===================================== -->
+    <div class="dark_toggle">
+        <div class="ul-header">
+            <a class="mode" onclick="myFunction()" title="Toggle Mode">
+                <div class="icon-container">
+                    <i id="sunIcon" class="fa-solid fa-sun fa-spin icon"></i>
+                    <i id="moonIcon" class="fa-solid fa-moon icon hidden"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================== Dark Light Mode End===================================== -->
+    <header>
+        <!-- ====================================== Fix Icon Menu ===================================== -->
+        <div class="sidebar close">
+            <ul class="nav-links icetab-container" id="icetab-container">
+                <li class="icetab current-tab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/home_icon.svg" alt="home_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li class=""><a class="link_name" href="javascript:void(0)">Home</a></li>
+                    </ul>
+                </li>
+                <li class="icetab menu-btn">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/about_icon.svg" alt="about_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">About Me</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/resume_icon.svg" alt="resume_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Resume</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/services_icon.svg" alt="services_icon">
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="javascript:void(0)">Services</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/skills_icon.svg" alt="skills_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="icetab">
+                    <a class="nav_menu_icon_line" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/portfolio_icon.svg" alt="portfolio_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Portfolio</a></li>
+                    </ul>
+                </li>
+                
+                <li class="icetab">
+                    <a class="" href="javascript:void(0)">
+                        <img class="nav_menu_icon" src="../assets/images/contact_icon.svg" alt="contact_icon">
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================== Fix Icon Menu End ===================================== -->
+        <!-- ======================================= Side Menu ================================== -->
+        <div class="toggle" onclick="openNav()">
+            <img class="line-menu" src="../assets/images/line-menu.png" alt="line-menu">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="closebtn" onclick="closeNav()">&times;</div>
+            <!-- <img class="logo" src="../assets/images/logo.png" alt="logo"> -->
+            <ul class="sidescreen_sub icetab-container" id="icetab-container2">
+                <li class="icetab current-tab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/home_icon.svg" alt="home_icon">Home
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/about_icon.svg"
+                            alt="about_icon">About Me
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/resume_icon.svg"
+                            alt="resume_icon">Resume
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/services_icon.svg"
+                            alt="services_icon.svg">Services
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/skills_icon.svg"
+                            alt="skills_icon">Skills
+                    </a>
+                </li>
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/portfolio_icon.svg"
+                            alt="portfolio_icon">Portfolio
+                    </a>
+                </li>
+  
+                <li class="icetab" onclick="openNav()">
+                    <a class="icons2" href="javascript:void(0)">
+                        <img class="nav_menu_icon sidenav_img" src="../assets/images/contact_icon.svg"
+                            alt="contact_icon">Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- ======================================= Side Menu End ================================== -->
+    </header>
+    <div class="all_page" id="page">
+        <section class="card_section" id="card_main">
+            <div class="olivia_bio" id="oliva_details">
+                <div class="imgBox">
+                    <img class="olivia-img" src="../assets/images/mypic.jpg" alt="olivia-img">
+                </div>
+                <div class="bio_contain">
+                    <h1 class="olivia_moswa">Navaneeth G</h1>
+                    <h2 class="designer font_w_font_s1 overflow-hidden"></h2>
+                    <button class="download_cv hire_me font_w_font_s">
+                        <i class="ri-at-line"></i> Hire Me
+                    </button>
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="right_card_main icetab-content" id="icetab-content">
+                <!-- ======================================= Home Section ================================== -->
+                <section class="oliva-intro tabcontent tab-active" id="home">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">intro</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Hi from Navaneeth G, Designer and Developer!</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">  
+                        I'm a passionate individual with a mission to craft innovative and user-centric digital solutions. With a strong foundation in design and development principles and an eye for detail, I specialize in transforming complex concepts into seamless, engaging interfaces that resonate with users.
+                    </h3>
+                    <div class="button_circle_group">
+                        <div>
+                            <button class="download_cv font_w_font_s"
+                                onClick="window.open('../assets/pdf/Navaneeth_G.pdf');">
+                                <i class="ri-download-cloud-2-line"></i>Download CV
+                            </button>
+                        </div>
+                        <div class="circular_text_main ">
+                            <a href="javascript:void(0)" class="down_arrow_main position-relative">
+                                <img class="circular_text" src="../assets/images/circular_text.png" alt="circular_text">
+                                <img class="down_arrow" src="../assets/images/down_arrow.svg" alt="down_arrow">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= About Section ================================== -->
+                <section class="oliva-intro tabcontent" id="about">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">about me</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Crafting stories through Design and Innovation</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Since embarking on my journey as a designer and developer, I've worked on innovative projects that span web development, data analysis, and IoT systems. From collaborating with startups to interning at established firms, I’ve contributed to creating impactful digital experiences for businesses and consumers alike. I’m confident in my skills, endlessly curious, and always striving to refine my expertise—tackling one complex challenge at a time.
+                    </h3>
+                    <!-- <div class="about_counter fade_up">
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="5">5+</h3>
+                            <h3 class="experince font_w_font_s1 ">YEARS OF EXPERIENCE</h3>
+                        </div>
+                        <div class="counter">
+                            <h3 class="counter2 count font_w_font_s" data-count="160">160+</h3>
+                            <h3 class="experince">PROJECTS COMPLETED ON 15 COUNTRIES</h3>
+                        </div>
+                    </div> -->
+                </section>
+                <!-- ======================================= Resume Section ================================== -->
+                <section class="oliva-intro tabcontent" id="resume">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">Resume</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Education</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">With a strong academic background, I have cultivated a deep understanding of computer science principles and honed my technical skills in programming, web development, and data analysis
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Master of Computer Applications (MCA)</h3>
+                            <h4 class="university font_w_font_s1">RNS Institute of Technology, Bengaluru, India / 2022-2024
+                            </h4>
+                            <h5 class="cursus font_w_font_s1">Completed MCA at RNS Institute of Technology, Bengaluru, where I gained expertise in software development, data structures, algorithms, distributed systems, and emerging technologies.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">Bachelor of Computer Applications (BCA)</h3>
+                            <h4 class="university font_w_font_s1">JSS SMI UG and PG Studies, Dharwad, India / 2019-2022</h4>
+                            <h5 class="cursus font_w_font_s1">Graduated with a BCA from JSS SMI UG and PG Studies, Dharwad, developing strong skills in programming, database management, web development, and foundational computer science concepts.
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <h3 class="bachelor font_w_font_s1">phd of Science in Information Technology</h3>
+                            <h4 class="university font_w_font_s1">Cambridge University / 2016 - 2018</h4>
+                            <h5 class="cursus font_w_font_s1">Adipiscing sed magna tempus arcu morbi. Ipsum pellentesque
+                                lorem suscipit in. Hendrerit rhoncus quis tempor urna pharetra ut erat.</h5>
+                        </div>
+                    </div> -->
+                    <h2 class="moswa experience_main_text font_w_font_s fade_up">Experience</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Skilled in web development, IoT systems, data analysis, and collaborative project execution across industries.
+                    </h3>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Web Developer Intern</h3>
+                                    <h4 class="company font_w_font_s1">Digital Bhem, Bengaluru (November 2023 – December 2023)</h4>
+                                </div>
+                                <!-- <img class="company_logo" src="../assets/images/envato.png" alt="envato"> -->
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Designed and developed responsive web projects, including a portfolio website and a temperature converter app.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative education_space">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">IEEE Office Bearer</h3>
+                                    <h4 class="company font_w_font_s1">IEEE (2024)</h4>
+                                </div>
+                                <!-- <img class="company_logo" src="../assets/images/apple.png" alt="apple"> -->
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Contributed to organizing and managing IEEE initiatives, fostering collaboration and driving innovation among members
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="education position-relative">
+                        <div class="side_circle_ring fade_up">
+                            <div class="small_yellow_border">
+                                <div class="small_yellow_circle"></div>
+                            </div>
+                        </div>
+                        <div class="small_yellow_border_main fade_up">
+                            <div class="envato_group_main">
+                                <div>
+                                    <h3 class="bachelor font_w_font_s1">Freelance Designer & Developer for Escafate</h3>
+                                    <h4 class="company font_w_font_s1">2022-2023</h4>
+                                </div>
+                                <!-- <img class="company_logo" src="../assets/images/twitter.png" alt="twitter"> -->
+                            </div>
+                            <h5 class="cursus font_w_font_s1">Worked on various projects, including a digital complaint portal, data analysis applications, and IoT systems like a gas leakage detector with automatic exhaust. Collaborated with cross-functional teams to deliver user-centric solutions across diverse platforms
+                            </h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Services Section ================================== -->
+                <section class="oliva-intro tabcontent" id="services">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my services</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Bringing your vision to life with Precision and Passion</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Bringing your vision to life with precision and passion, delivering innovative, user-centric digital solutions through design and development expertise.
+                    </h3>
+                    <div class="services_box_main">
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/web.png" alt="web">
+                            <h3 class="ui_ux font_w_font_s">Web Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Designing and developing responsive websites, including portfolio websites and custom web applications using HTML, CSS, and JavaScript.
+                            </h4>
+                        </div>
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/ux.png" alt="ux">
+                            <h3 class="ui_ux font_w_font_s">Data analysis</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Analyzed medical examination data using Python for data cleaning, transformation, and predictive modeling to improve patient care and outcomes.
+                            </h4>
+                        </div>
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/android.png" alt="android">
+                            <h3 class="ui_ux font_w_font_s">IoT Systems Development</h3>
+                            <h4 class="ui_sub_text font_w_font_s1">Building and implementing fault-tolerant systems such as gas leakage detectors with automatic exhaust for enhanced safety.
+                            </h4>
+                        </div>
+
+                        <div class="service_box fade_up">
+                            <img class="services_icon" src="../assets/images/marketing.png" alt="marketing">
+                            <h3 class="ui_ux font_w_font_s">Loading more...</h3>
+                            <!-- <h4 class="ui_sub_text font_w_font_s1">Platea non tristique ultricies mi malesuada amet
+                                imperdiet posuere ut. Orci pellentesque vehicula iaculis integer donec.
+                            </h4> -->
+                        </div>
+                    </div>
+
+                </section>
+                <!-- ======================================= Skills Section ================================== -->
+                <section class="oliva-intro tabcontent" id="skill">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">my skills</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Crafting Stories through Design and Imagination</h2>
+                    <h3 class="passionate font_w_font_s1 ">Skilled in C/C++, Python, Java, JavaScript, MySQL, Flask, data analysis, web development, IoT systems, GitHub.
+                    </h3>
+                    <h3 class="lan_skill font_w_font_s fade_up">Language Skills</h3>
+                    <div class="skill_circle_main">
+                        <div>
+                            <div class="circlechart" data-percentage="90"></div>
+                            <h2 class="subject">English</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="100"></div>
+                            <h2 class="subject">Kannada</h2>
+                        </div>
+                        <div>
+                            <div class="circlechart" data-percentage="70"></div>
+                            <h2 class="subject">Hindi</h2>
+                        </div>
+                        <!-- <div>
+                            <div class="circlechart" data-percentage="40"></div>
+                            <h2 class="subject">German</h2>
+                        </div> -->
+                    </div>
+                    <h3 class="lan_skill hard_skill font_w_font_s fade_up">Hard Skills</h3>
+                    <div class="skill_circle_main">
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/figma.png" alt="figma">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Figma</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/bootstrap.png" alt="bootstrap">
+                                <h4 class="hard_skill_counter font_w_font_s1">90%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Bootstrap</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/css.png" alt="css">
+                                <h4 class="hard_skill_counter font_w_font_s1">85%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">CSS</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma"style="height: 60px; width: 55px;" src="../assets/images/js.png" alt="Javascript">
+                                <h4 class="hard_skill_counter font_w_font_s1">89%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Javascript</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" style="height: 80px; width: 75px;" src="../assets/images/python.png" alt="python">
+                                <h4 class="hard_skill_counter font_w_font_s1">77%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">Python</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/html.png" alt="html">
+                                <h4 class="hard_skill_counter font_w_font_s1">94%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">HTML</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma" src="../assets/images/wordpress.png" alt="wordpress">
+                                <h4 class="hard_skill_counter font_w_font_s1">82%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">WordPress</h4>
+                        </div>
+                        <div class="skill_circle fade_up">
+                            <div class="hard_skill_group">
+                                <img class="figma"style="height: 50px; width: 50px;" src="../assets/images/react.png" alt="react">
+                                <h4 class="hard_skill_counter font_w_font_s1">74%</h4>
+                            </div>
+                            <h4 class="subject font_w_font_s1">ReactJS</h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="portfolio">
+                    <div class="intro_main">
+                        <h2 class="intro font_w_font_s fade_up">portfolio</h2>
+                    </div>
+                    <h2 class="moswa font_w_font_s fade_up">Elevate your brand to new heights with our expertise</h2>
+                    <h3 class="passionate font_w_font_s1 fade_up">Elevate your brand with our expertise, creating innovative, user-centric solutions like those in my portfolio, including web development, data analysis, and IoT systems.
+                    </h3>
+                    <div class="content_main">
+                        <div class="content_main1">
+                            <div class="fade_up">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/p1.png" alt="content_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Raghavendra Diagnostics</h3>
+                                        <!-- <p class="content-text"></p> -->
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Raghavendra Diagnostics</h4>
+                                <!-- <p class="project_name_sub font_w_font_s1">CONTENT</p> -->
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio" id="youtube">
+                                    <a href="https://youtu.be/OZzoAw9QHXY?si=j32q8VFU2u2_WkfW">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/p2.png" alt="food_app">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Digital Complaint Portal</h3>
+                                            <!-- <p class="content-text">youtube video</p> -->
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Digital Complaint Portal</h4>
+                                <!-- <p class="project_name_sub font_w_font_s1">youtube video</p> -->
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio link">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/p3.jpg" alt="pocket_fm">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Escafate Job Portal</h3>
+                                        <!-- <p class="content-text">sound cloud</p> -->
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Escafate Job Portal</h4>
+                                <!-- <p class="project_name_sub font_w_font_s1">sound cloud</p> -->
+                            </div>
+                        </div>
+                        <div class="content_main2">
+                            <div class="fade_up">
+                                <div class="content_portfolio" id="vimeo">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/p4.jpg"
+                                        alt="crypto_app_img">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Largus Biotech pvt.Ltd</h3>
+                                        <!-- <p class="content-text">vimeo video</p> -->
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Largus Biotech pvt.Ltd</h4>
+                                <!-- <p class="project_name_sub font_w_font_s1">vimeo video</p> -->
+                            </div>
+                            <div class="">
+                                <a href="#popup1">
+                                    <div class="content_portfolio">
+                                        <div class="content-overlay"></div>
+                                        <img class="content-image" src="../assets/images/p5.jpg"
+                                            alt="city_3Dview">
+                                        <div class="content-details fadeIn-bottom">
+                                            <h3 class="content-title">Sri Durga HR Solutions</h3>
+                                            <!-- <p class="content-text">gallery</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <h4 class="project_name font_w_font_s">Sri Durga HR Solutions</h4>
+                                <!-- <p class="project_name_sub font_w_font_s1">gallery</p> -->
+                            </div>
+                            <div class="">
+                                <div class="content_portfolio pop-up">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/images/lastimg.jpg" alt="bank_app">
+                                    <div class="content-details fadeIn-bottom">
+                                        <h3 class="content-title">Loading more...</h3>
+                                        <p class="content-text"></p>
+                                    </div>
+                                </div>
+                                <h4 class="project_name font_w_font_s">Loading more...</h4>
+                                <p class="project_name_sub font_w_font_s1"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ======================================= Portfolio Section End  ================================== -->
+                <!-- ======================================= Testimonials Section  ================================== -->
+                
+                <!-- ======================================= Testimonials Section End ================================== -->
+                <!-- ======================================= Blog Section  ================================== -->
+                
+                <!-- ======================================= Blog Section End  ================================== -->
+                <!-- ======================================= Contact us Section  ================================== -->
+                <section class="oliva-intro tabcontent" id="contactSection">
+                    <div class="intro_main">
+                        <h2 class="intro fade_up">contact us</h2>
+                    </div>
+                    <h2 class="moswa fade_up">Let's Work Together!</h2>
+                    <div class="container1">
+                        <div class="form form__1">
+                            <label for="name" class="form__label">What’s Your Name*</label>
+                            <input type="text" class="form__input" placeholder="" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form form__2">
+                            <label for="email" class="form__label">Your Email*</label>
+                            <input type="email" class="form__input" placeholder="" id="email" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Your Phone Number*</label>
+                            <input type="text" class="form__input" placeholder="" id="phone" required
+                                autocomplete="off">
+                        </div>
+                        <div class="form form__1">
+                            <label for="name" class="form__label">Subject*</label>
+                            <input type="text" class="form__input" placeholder="" id="subject" required
+                                autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="btn_message">
+                        <div class="form form__3">
+                            <label for="name" class="form__label">Tell us about your project*</label>
+                            <input type="text" class="form__input message2" placeholder="" id="project" required>
+                        </div>
+                        <div class="send_message_form">
+                            <button class="download_cv form__btn">
+                                <i class="fa-regular fa-paper-plane material-icons"></i>Send Message
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="moswa touch">Get in touch!</h3>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/contact.svg" alt="contact">
+                            <h4 class="contact_number"><a href="tel:+91 9380202682">+91 9380202682</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/gmail.svg" alt="gmail">
+                            <h4 class="contact_number"><a href="mailto:navaneethgmayya.com">navaneethgmayya.com</a></h4>
+                        </div>
+                        <div class="contact_number_main">
+                            <img src="../assets/images/map.svg" alt="map">
+                            <h4 class="contact_number">
+                                <a href="javascript:void;">#662 Nisarga Layout Chikkalsandra, Bengaluru</a>
+                            </h4>
+                        </div>
+                    </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54283.360069817514!2d77.50775984899893!3d12.91047632080419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fc919507dcb%3A0x9cee324549f1844b!2sGramarajya!5e1!3m2!1sen!2sin!4v1733941727735!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h5 class="copyright">© 2024. All rights reserved by
+                        <a class="krishna" 
+                            target="_blank">Navaneeth G.</a>
+                           
+                    </h5>
+                </section>
+                <!-- ======================================= Contact us Section End ================================== -->
+            </div>
+        </section>
+        <!-- ======================================= Social Media Right Side  ================================== -->
+        <div class="social_media_main" id="social_media_main">
+            <ul class="social_media">
+                <li><a href="https://www.facebook.com/navaneethg.bhat" target="blank">FB</a></li>
+                <li><a href="https://x.com/NavaneethGMayya" target="blank">TW</a></li>
+                <li><a href="https://www.linkedin.com/in/navaneeth-g-2a389328b/" target="blank">IN</a></li>
+                <!-- <li><a href="https://www.behance.net" target="blank">BE</a></li>
+                <li><a href="https://dribbble.com" target="blank">DR</a></li> -->
+            </ul>
+        </div>
+        <!-- ======================================= Social Media Right Side End ================================== -->
+        <!-- ======================================= Portfolio PopUp Window  ================================== -->
+
+    <!-- ======================================= Portfolio gallery ================================== -->
+    <div id="popup1" class="overlay_gallery">
+        <div class="popup_gallery">
+            <h2 class="city_gallery">City 3D View Gallery</h2>
+            <a class="close" href="#">&times;</a>
+            <div id="cbwrap">
+                <div class="gallery">
+                    <img src="../assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="../assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="../assets/images/gallery_img3.png" alt="gallery_img3">
+                    <img src="../assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="../assets/images/gallery_img5.png" alt="gallery_img5">
+                    <img src="../assets/images/gallery_img1.png" alt="gallery_img1">
+                    <img src="../assets/images/gallery_img4.png" alt="gallery_img4">
+                    <img src="../assets/images/gallery_img2.png" alt="gallery_img2">
+                    <img src="../assets/images/gallery_img5.png" alt="gallery_img5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/javascript/jquery.min.js"></script>
+    <script src="../assets/javascript/magnific-popup.min.js"></script>
+    <script src="../assets/javascript/progresscircle.js"></script>
+    <script src="../assets/javascript/cursor.js"></script>
+    <script src="../assets/javascript/bootstrap.bundle.min.js"></script>
+    <script src="../assets/javascript/slick.min.js"></script>
+    <script src="../assets/javascript/script.js"></script>
+</body>
+
+</html>
